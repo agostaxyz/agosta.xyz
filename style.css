@@ -13,13 +13,36 @@ header a:hover{
     opacity: 0.85;
 }
 
+body{
+    margin: 0px;
+    background-image: url(src/background.png);
+    background-repeat: no-repeat;
+    background-color: #66728a;
+    background-size: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
 header{
-    margin: 55px;
+    margin-top: 55px;
+    margin-left: 55px;
 }
 
 nav{
-    width: 33.33%;
-    float: right;
+    margin-top: 22vh;
+    line-height: 3.5em;
+}
+
+main {
+    margin-left: 45vw;
+    border: none;
+    resize: none;
+    color: #ffffff;
+    font-family: 'Inconsolata', 'Times New Roman';
+    background-color: #66728a;
+    font-size: 1.3em;
+    border: 3em solid #66728a;
+    width: 30vw;
 }
 
 header nav a{
@@ -31,26 +54,6 @@ header .logo{
     min-height: 70px;
 }
 
-body{
-    background-image: url(src/background.png);
-    background-repeat: no-repeat;
-    background-color: #222222;
-    background-size: 100vw;
-}
-
-main div{
-    border: none;
-    resize: none;
-    color: #ffffff;
-    font-family: 'Inconsolata', 'Times New Roman';
-    background-color: #66728a;
-    font-size: 1.3em;
-    border: 3em solid #66728a;
-    margin-left: 48vw;
-    margin-top: 10vh;
-    width: 30vw;
-    min-width: 300px;
-}
 main p{
     text-indent: 1.7em;
     margin-top: 0em;
@@ -64,6 +67,14 @@ main li{
     line-height: 1.3;
 }
 
-main div:hover{
+main:hover {
     cursor:default;
 }
+
+@media screen and (max-width: 900px) {
+    main {
+        margin: 0px;
+        position: absolute;
+        width: 100%;
+        border: 0em solid #66728a;
+    } 
