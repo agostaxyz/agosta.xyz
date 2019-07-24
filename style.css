@@ -33,18 +33,6 @@ nav{
     line-height: 3.5em;
 }
 
-main {
-    margin-left: 45vw;
-    border: none;
-    resize: none;
-    color: #ffffff;
-    font-family: 'Inconsolata', 'Times New Roman';
-    background-color: #66728a;
-    font-size: 1.3em;
-    border: 3em solid #66728a;
-    width: 30vw;
-}
-
 header nav a{
     margin: 1vw;
 }
@@ -52,6 +40,17 @@ header nav a{
 header .logo{
     height: 10vh;
     min-height: 70px;
+}
+
+main {
+    margin-left: 45vw;
+    resize: none;
+    border: 3em solid #66728a;
+    color: #ffffff;
+    font-family: 'Inconsolata', 'Times New Roman';
+    background-color: #66728a;
+    font-size: 1.3em;
+    width: 30vw;
 }
 
 main p{
@@ -71,10 +70,30 @@ main:hover {
     cursor:default;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 810px) {
+    body {
+        background-size: 100vh;
+    }
+    header{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
     main {
         margin: 0px;
-        position: absolute;
+        margin-top: 35vh;
         width: 100%;
+        position: absolute;
         border: 0em solid #66728a;
-    } 
+    }
+    
+    main p, main li {
+        font-size: 1em;
+        margin: 4%;
+    }
+
+    nav{
+        float: ;
+        margin-top: 0px;
+        line-height: 3em;
+    }    
