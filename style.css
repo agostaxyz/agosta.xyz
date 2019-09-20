@@ -16,6 +16,7 @@ body{
     background-image: url(src/background.png);
     background-repeat: no-repeat;
     background-position: right bottom;
+    opacity: 0.8;
     background-size: 75vh;
     height: 100vh;
     min-height: 200px;
@@ -55,11 +56,14 @@ footer img{
 
     .background {
         background-position: bottom;
-        opacity: 0.6;
+        opacity: 0.4;
     }
 
     ul {
-        font-size: 1.7em;
+        font-size: 1.5em;
+        padding-left: 6vw;
+        padding-right: 5vw;
+        width: 90vw;
     }
     footer {
         position: unset;
