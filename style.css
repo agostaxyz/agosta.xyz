@@ -1,99 +1,68 @@
-header a{
+body, ul, li, footer, img, a{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+.background{
+    position: absolute;
+    z-index: -1;
+    background-image: url(src/background.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 75vh;
+    height: 100vh;
+    min-height: 200px;
+    width: 100vw;
+    min-width: 300px;
+}
+
+ul{
+    padding-top: 20vh;
+    padding-left: 20vh;
+    height: 60vh;
+    width: 60vw;
+    font-size: 1.8em;
+    line-height: 1.3em;
+    overflow-y: auto;
+}
+
+li {
     color: #ffffff;
     font-family: 'Inconsolata', 'Times New Roman';
     font-weight: bold;
-    font-size: 1.2em;
-    text-decoration: none;
-    border: none;
 }
 
-header a:hover{
-    box-shadow: none;
-    text-shadow: 3px 3px 10px #000;
-    opacity: 0.85;
+footer{
+    position: absolute;
+    bottom: 30px;
+    padding-left: 16%;
 }
 
-body{
-    margin: 0px;
-    background-image: url(src/background.png);
-    background-repeat: no-repeat;
-    background-color: #66728a;
-    background-size: 100vw;
-    max-width: 100vw;
-    max-height: 100vh;
+footer img{
+    height: 11vh;
+    min-height: 60px;
+    margin: 20px;
 }
 
-header{
-    margin-top: 55px;
-    margin-left: 55px;
-}
+@media only screen and (max-width: 1000px) {
 
-nav{
-    margin-top: 22vh;
-    line-height: 3.5em;
-}
-
-header nav a{
-    margin: 1vw;
-}
-
-header .logo{
-    height: 10vh;
-    min-height: 70px;
-}
-
-main {
-    margin-left: 45vw;
-    resize: none;
-    border: 3em solid #66728a;
-    color: #ffffff;
-    font-family: 'Inconsolata', 'Times New Roman';
-    background-color: #66728a;
-    font-size: 1.3em;
-    width: 30vw;
-}
-
-main p{
-    text-indent: 1.7em;
-    margin-top: 0em;
-    margin-bottom: 1.9em;
-    line-height: 1.2;
-}
-
-main li{
-    list-style-position: inside;
-    margin-top: 1.2em;
-    line-height: 1.3;
-}
-
-main:hover {
-    cursor:default;
-}
-
-@media screen and (max-width: 810px) {
-    body {
-        background-size: 100vh;
-    }
-    header{
-        margin-top: 0px;
-        margin-left: 0px;
+    .background {
+        background-position: bottom;
+        opacity: 0.6;
     }
 
-    main {
-        margin: 0px;
-        margin-top: 35vh;
-        width: 100%;
-        position: absolute;
-        border: 0em solid #66728a;
+    footer {
+        position: unset;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
     }
-    
-    main p, main li {
-        font-size: 1em;
-        margin: 4%;
-    }
-
-    nav{
-        float: ;
-        margin-top: 0px;
-        line-height: 3em;
-    }    
+}
