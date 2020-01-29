@@ -1,17 +1,19 @@
-body, ul, h1, li, footer, img, h2, h3, h4, h5, h6 {
+body, ul, h1, p, a, li, footer, img, h2, h3, h4, h5, h6 {
     text-decoration:none;
     margin: 0;
     padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    color: #ffffff;
+    font-family: 'Inconsolata', 'Times New Roman';
+    font-weight: bold;
 }
 
-a {
-    font-family: 'Inconsolata', 'Times New Roman';
-    font-weight: bolder;
-}
+li a {
+    border-bottom: 4px solid lightgray;
+} 
 
 a:hover {
     opacity: 0.5;
@@ -24,6 +26,44 @@ body {
     max-height: 100vh;
     max-width: 100vw;
     overflow: hidden;
+}
+
+.arrow {
+height: 25px;
+}
+
+.a-home {
+    position: relative;
+    left: 140px;
+    top: 150px;
+    font-size: 2em;
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    padding-left: 16%;
+}
+
+h2 {
+    font-size: 1.3em;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.info-box {
+    padding-top: 20vh;
+    padding-left: 20vh;
+    font-size: 1.7em;
+    line-height: 1.3em;
+    overflow-y: auto;
+    height: 60vh;
+    width: 60vw;
 }
 
 .background {
@@ -40,27 +80,8 @@ body {
     min-width: 300px;
 }
 
-ul {
-    padding-top: 20vh;
-    color: red;
-    padding-left: 20vh;
-    height: 60vh;
-    width: 60vw;
-    font-size: 1.7em;
-    line-height: 1.3em;
-    overflow-y: auto;
-}
-
-li, h1, h2, h3, a {
-    color: #ffffff;
-    font-family: 'Inconsolata', 'Times New Roman';
-    font-weight: bold;
-}
-
-footer {
-    position: absolute;
-    bottom: 30px;
-    padding-left: 16%;
+p img {
+    height: 29px;
 }
 
 footer img {
@@ -79,16 +100,6 @@ footer img {
     align-content: center;
 }
 
-div h2 {
-    font-size: 8em;
-    text-align: center;
-}
-
-div h3 {
-    font-size: 1.4em
-}
-
-
 div a {
     font-size: 1.5em;
     font-family: 'Inconsolata', 'Times New Roman';
@@ -104,7 +115,7 @@ div a {
     margin: 10px;
 }
 
-.box-fourofour {
+.box {
     background-color: #4e5d7c;
     border-left: 100px solid #4e5d7c;
     border-right: 100px solid #4e5d7c;
@@ -112,15 +123,24 @@ div a {
     border-bottom: 50px solid #4e5d7c;
 }
 
+.title {
+    font-size: 8em;
+    text-align: center;
+}
+
+.desc {
+    font-size: 1.4em
+}
+
 @media only screen and (max-width: 1000px) {
     .background {
         background-position: bottom;
         opacity: 0.4;
     }
-    ul {
-        font-size: 1.5em;
-        padding-left: 6vw;
-        padding-right: 5vw;
+    info-box {
+        font-size: 0.7em;
+        padding-left: 2vw;
+        padding-right: 2vw;
         width: 90vw;
     }
     footer {
