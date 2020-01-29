@@ -137,12 +137,15 @@ div a {
         background-position: bottom;
         opacity: 0.4;
     }
-    info-box {
-        font-size: 0.7em;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        width: 90vw;
     }
+
+    .info-box {
+        font-size: 1.4em;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        width: 80vw;
+    }
+
     footer {
         position: unset;
         padding-left: 0px;
