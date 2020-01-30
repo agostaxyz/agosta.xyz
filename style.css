@@ -19,8 +19,25 @@ a:hover {
     opacity: 0.5;
 }
 
+canvas {
+    position: absolute;
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #247b8e;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+  
+
 body {
-    background-color: #000;
+    background-color: #111;
     min-height: 200px;
     min-width: 200px;
     max-height: 100vh;
@@ -28,15 +45,17 @@ body {
     overflow: hidden;
 }
 
-.arrow {
-height: 25px;
+.test {
+    margin: 30px;
 }
 
-.a-home {
-    position: relative;
-    left: 140px;
-    top: 150px;
-    font-size: 2em;
+.test p {
+    margin: 20px;
+}
+
+.logo {
+    float: left;    
+    height: 110px;
 }
 
 footer {
@@ -50,7 +69,7 @@ h2 {
     padding-bottom: 5px;
 }
 
-h3 {
+h3, h4 {
     margin-top: 25px;
     margin-bottom: 5px;
     font-size: 1.1em;
@@ -59,12 +78,37 @@ h3 {
 .info-box {
     padding-top: 20vh;
     padding-left: 20vh;
+    padding-right: 20vh;
     font-size: 1.7em;
     line-height: 1.3em;
     overflow-y: auto;
     height: 60vh;
     width: 60vw;
 }
+
+.qual-box {
+    position: absolute;
+    color: black;
+    padding-top: 7vh;
+    height: 80vh;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    width: 40vw;    
+    font-size: 1.3em;
+    line-height: 1.2em;
+    overflow-y: auto;
+}
+
+.qual-box h1{
+    font-size: 2.7em;
+    margin-bottom: 30px;
+}
+
+.qual-box h2{
+    font-size: 2em;
+    margin: 30px 0px;
+}
+
 
 .background {
     position: absolute;
@@ -137,12 +181,13 @@ div a {
         background-position: bottom;
         opacity: 0.4;
     }
-    info-box {
-        font-size: 0.7em;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        width: 90vw;
+    .info-box {
+        font-size: 1.4em;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        width: 80vw;
     }
+
     footer {
         position: unset;
         padding-left: 0px;
