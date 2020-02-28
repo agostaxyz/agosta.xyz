@@ -57,5 +57,22 @@ footer a {
 }
 
 @media only screen and (max-width: 1000px) {
+    .background {
+        background-position: bottom;
+        opacity: 0.4;
+    }
+    .info-box {
+        font-size: 1.4em;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        width: 80vw;
+    }
 
+    footer {
+        position: unset;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+    }
 }
