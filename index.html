@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
@@ -11,24 +12,48 @@
     <title>Home - Luca Agosta</title>
     <link rel="shortcut icon" href="src/favicon.ico">
     <script src="main.js"></script>
+    <meta name="twitter:image:src" content="https://github.com/GeladeiraTsunami/agosta.dev/blob/master/src/preview.jpg">
+    <meta property="og:image" content="https://github.com/GeladeiraTsunami/agosta.dev/blob/master/src/preview.jpg">
+
 </head>
 
-<body onload="colorFunc()" class="black">
-    <div class="background"></div>
-        <main class="info-box">
-            <h1>Luca Agosta</h1>
-            <ul>
-                <li>Developer.</li>
-                <li><a id="pink" href="https://projects.agosta.dev">Projects</a> (work in progress).</li>
-            </ul>
-        </main>
-        <footer>
-            <a href="https://github.com/GeladeiraTsunami" target="_blank"><img src="src/github.png" alt="Github logo"></a><a
-                href="https://www.linkedin.com/in/lucaagosta/" target="_blank"><img src="src/linkedin.png"
-                    alt="linkedIn"></a><a href="mailto:me@agosta.dev" target="_blank"><img src="src/mailto.png"
-                    alt="e-mail"></a>
-        </footer>
-    </div>
+<body onload="mainFunc()">
+
+    <h1>Luca Agosta</h1>
+    <h2>Developer.</h2>
+    <main>
+        <div id="content" onclick="location.href='https://bit.ly/linux-landing';"><a href="https://bit.ly/linux-landing">
+            <div class="header">bit.ly/linux-landing</a></div>
+            Linux Landing is a deployment for linux, you automaticaly download all your application packages, it was made in shell and python. 
+        </div>
+
+        </a>
+
+        <div id="content" onclick="location.href='https://bit.ly/site_sustentabilidade';"><a href="https://bit.ly/site_sustentabilidade">
+            <div class="header">bit.ly/site_sustentabilidade</a></div>
+            Sustentabilidade is an information website focused about recicling and eletronic waste.
+        </div>
+
+        <div id="content" onclick="location.href='https://bit.ly/cranbot';"><a href="https://bit.ly/cranbot">
+            <div class="header">bit.ly/cranbot</a></div>
+            Cranbot is a Discord bot that reply preset phrases and do multiple custom functions.
+        </div>
+
+
+
+
+    </main>
+
+
+    <div class="footer-bar"></div>
+    <footer>
+        <a title="GitHub" href="https://github.com/GeladeiraTsunami"><img src="src/github.png" alt="Github logo"></a><a
+            title="Send E-mail" href="mailto:me@agosta.dev"><img src="src/mailto.png" alt="e-mail"></a><a
+            title="LinkedIn" href="https://www.linkedin.com/in/lucaagosta/"><img src="src/linkedin.png"
+                alt="linkedIn"></a><a title="Indeed" href="https://my.indeed.com/p/lucaa-1vcu705"><img
+                src="src/indeed.png" alt="indeed"></a>
+    </footer>
+
 </body>
 
 </html>
