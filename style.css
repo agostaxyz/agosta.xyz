@@ -40,7 +40,7 @@ p {
     margin-left: 5px;
 }
 
-#content {
+.content {
     display: inline-table;
     margin: 30px 50px;
     height: 200px;
@@ -51,7 +51,7 @@ p {
 }
 
 .content:hover {
-    background-color: red;
+    background-color: rgba(47, 79, 79, 0.664);
 }
 
 .header, .header a {
@@ -61,10 +61,15 @@ p {
 }
 
 main a {
-    padding: 0px 17px;
-    background-color: gray;
-    border: 2px solid gray;
-    border-radius: 7px;
+    text-decoration: underline;
+    color: gray;
+    font-size: 1.3em;
+    margin: 0px 20px;
+}
+main p {
+    font-size: 1.2em;
+    margin: 0.6em;
+    line-height: 1.2em;
 }
 
 .footer-bar {
@@ -94,7 +99,7 @@ footer a:hover {
         padding: 0px 15vw;
     }
 
-    #content {
+    .content {
         width: 30vw;
         margin: 10px;
     }
@@ -106,7 +111,7 @@ footer a:hover {
         padding: 0px 3vw;
     }
 
-    #content {
+    .content {
         width: 80vw;
         margin: 10px;
     }
