@@ -17,13 +17,41 @@ body {
     background-color: #111;
 }
 
+.blue-bg {
+    background-color: #005e7c;
+}
+
+.cyan-bg {
+    background-color: #1abc9c;
+}
+
+.yellow-bg {
+    background-color: yellow;
+}
+
+.salmon-bg {
+    background-color: #FF503D;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.big {
+    font-size: 1.6em;
+}
+
+.first {
+      padding: 15px 3px 3px 17px;
+}
+
+
 h1 {
     margin-top: 5vh;
     font-size: 5em;
 }
 
 h2 {
-    background-color: #1abc9c;
     color: #111;
     margin: 2vh 0px 5vh;
     padding: 0px 15px;
@@ -76,7 +104,6 @@ main p {
 .footer-bar {
     margin: 20px 0px;
     height: 15px;
-    background-color: #005e7c;
 }
 
 footer {
