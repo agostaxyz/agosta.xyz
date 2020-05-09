@@ -19,11 +19,11 @@ body {
 
 
 .blue {
-    color: lightblue;
+    color: #66C7F1;
 }
 
-.dark-blue {
-    color: rgb(63, 91, 214);
+.light-blue {
+    color: #A9E8FF;
 }
 
 .cyan {
@@ -39,19 +39,19 @@ body {
 }
 
 .orange {
-    color: orange;
+    color: #FF8956;
 }
 
 .light-green {
-    color: lightgreen;
+    color: #B7F6B7;
 }
 
 .green {
-    color: green;
+    color: #60ad5b;
 }
 
 .gray {
-    color: lightgray;
+    color: #84999D;
 }
 
 .blue-bg {
