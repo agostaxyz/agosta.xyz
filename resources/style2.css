@@ -1,12 +1,16 @@
-.preview {
+.relative {
     position: relative;
-    height: 256px;
-    width: 256px;
 }
 
 .absolute {
     position: absolute;
 }
+
+.small-box {
+    height: 256px;
+    width: 256px;
+}
+
 
 div .absolute {
     color: #222;

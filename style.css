@@ -17,6 +17,43 @@ body {
     background-color: #111;
 }
 
+
+.blue {
+    color: lightblue;
+}
+
+.dark-blue {
+    color: rgb(63, 91, 214);
+}
+
+.cyan {
+    color: #1abc9c;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.salmon {
+    color: #FF503D;
+}
+
+.orange {
+    color: orange;
+}
+
+.light-green {
+    color: lightgreen;
+}
+
+.green {
+    color: green;
+}
+
+.gray {
+    color: lightgray;
+}
+
 .blue-bg {
     background-color: #005e7c;
 }
@@ -38,13 +75,17 @@ body {
 }
 
 .big {
-    font-size: 1.6em;
+    font-size: 200%;
 }
 
 .first {
       padding: 15px 3px 3px 17px;
 }
 
+.p-text {
+    display: inline;
+    font-size: 1.3em;
+}
 
 h1 {
     margin-top: 5vh;
@@ -89,7 +130,15 @@ p {
     color: #333;
 }
 
-main a {
+.a-decoration {
+    text-decoration: underline;
+}
+
+#tags p {
+    display: inline-block;
+}
+
+.content a {
     text-decoration: underline;
     color: gray;
     font-size: 1.3em;
