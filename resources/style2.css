@@ -1,0 +1,17 @@
+.preview {
+    position: relative;
+    height: 256px;
+    width: 256px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+div .absolute {
+    color: #222;
+    border: 3px solid #bbb;
+    background-color: #bbb;
+    bottom: 0px;
+    right: 0px;
+}
