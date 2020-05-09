@@ -32,28 +32,35 @@
 
         <form>
             <p>logo</p>
+            <label>File</label>
+            <select id="file">
+                <option value="png">.png</option>
+                <option value="svg">.svg</option>
+                <option value="psd">.psd</option>
+            </select>
             <label>Color scheme</label>
-            <select id="myList">
+            <select id="color">
                 <option value="light">light</option>
                 <option value="dark">dark</option>
             </select>
             <label>Size</label>
-            <select id="myList">
+            <select id="size">
                 <option value="256">256p</option>
                 <option value="512">512p</option>
                 <option value="1024">1024p</option>
             </select>
             <label>Background</label>
-            <select id="myList">
+            <select id="bg">
                 <option value="light">None</option>
                 <option value="dark">Contrasting</option>
             </select>
             <input type="submit" value="Submit">
         </form>
 
-        
-        <img src="Logo_light.png" height="256px">
-        <p>256x256</p>
+        <div class="preview">
+            <img src="logo-light-256.png" height="256px">
+            <p class="absolute bottom right">256x256</p>
+        </div>
     </main>
 
 
