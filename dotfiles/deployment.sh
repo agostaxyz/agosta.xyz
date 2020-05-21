@@ -1,4 +1,4 @@
-sudo xbps-install git
+sudo xbps-install -Syu git
 mkdir git_workspace
 
 git clone https://github.com/Coldsaga/dotfiles.git git_workspace/dotfiles
