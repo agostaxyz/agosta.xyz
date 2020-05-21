@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/Coldsaga/dotfiles/master/deploy.sh?token=AIY7EQYKZCNT4PLJWXJNWGS6YSKEY
+https://raw.githubusercontent.com/Coldsaga/dotfiles/master/deployment.sh
