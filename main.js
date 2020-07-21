@@ -1,4 +1,5 @@
-console.log('Hello dev, awaiting Konami code.');
+console.log('Hello suspicious dev!');
+console.log('Awaiting Konami code.');
 
 function colorFunc() {
     document.getElementById("pink").style.borderBottom = "4px solid pink";

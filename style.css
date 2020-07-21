@@ -29,6 +29,10 @@ body {
     background-color: #111;
 }
 
+.transition {
+    transition: 0.7s;
+}
+
 .blue {
     color: #66C7F1;
 }
@@ -129,6 +133,7 @@ p {
 }
 
 .content {
+    transition: 0.3s;
     display: inline-table;
     margin: 30px 50px;
     height: 170px;
@@ -140,6 +145,7 @@ p {
 }
 
 .content:hover {
+    transition: 0.7;
     background-color: rgba(47, 79, 79, 0.664);
 }
 
@@ -190,6 +196,7 @@ footer a {
 
 footer a:hover {
     opacity: 0.7;
+    transition: 0.3s;
 }
 
 @media only screen and (max-width: 1100px) {
