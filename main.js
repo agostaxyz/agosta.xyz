@@ -1,19 +1,13 @@
-console.log('ERROR: Killer robots desengaged, type "konami" to see log');
+console.log('Hello dev, awaiting Konami code.');
 
-function mainFunc () {
-    
-
-}
-
-
-function colorFunc () {    
+function colorFunc() {
     document.getElementById("pink").style.borderBottom = "4px solid pink";
     document.getElementById("lightblue").style.borderBottom = "3px solid lightblue";
     document.getElementById("lightgreen").style.borderBottom = "3px solid lightgreen";
 }
 
-function despacito () {
+function despacito() {
     /*Set active project tab to "ALL"*/
 
 
-}   
+}
