@@ -38,6 +38,11 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
+    document.getElementById("cavalo").style.display = "inline-table";
+
+    setTimeout(function() { document.getElementById("cavalo").style.display = "none"; }, 1300);
+
+
     var audio = new Audio('src/cavalo.mp3');
     audio.play();
 }
