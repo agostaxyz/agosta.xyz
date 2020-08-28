@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
     <title>Home - Luca Agosta</title>
     <link rel="shortcut icon" href="src/favicon.ico">
-    <script src="main.js"></script>
     <script src="cavalo.js"></script>
     <meta property="og:description" content='Luca Agosta - Back end Deveolper.' />
     <meta property="og:title" content='Luca Agosta - Back end Deveolper.' />
@@ -21,7 +20,11 @@
     <meta property="og:url" content='https://agosta.dev' />
 </head>
 
-<body>
+<body onload="loadClear()">
+    <div id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
     <div id="container">
         <div class="grained">
         </div>
@@ -50,7 +53,9 @@
                         <p class="blue">lo</p>
                         <p class="orange">.</p>
                     </div>
-                    <img id="cavaloimg" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fvignette2.wikia.nocookie.net%2Fhotline-miami%2Fimages%2F4%2F4f%2FUntitled-9.png%2Frevision%2Flatest%2Fscale-to-width-down%2F270%3Fcb%3D20150310224613&f=1&nofb=1" alt="cavalo">
+                    <img id="cavaloimg"
+                        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fvignette2.wikia.nocookie.net%2Fhotline-miami%2Fimages%2F4%2F4f%2FUntitled-9.png%2Frevision%2Flatest%2Fscale-to-width-down%2F270%3Fcb%3D20150310224613&f=1&nofb=1"
+                        alt="cavalo">
                 </div>
 
                 <div class="content">
@@ -100,7 +105,8 @@
                         <p class="gray">bash</p>
                     </div>
 
-                    <p>A script that download all my applications, deploy my custom desktop and manage all my config files.
+                    <p>A script that download all my applications, deploy my custom desktop and manage all my config
+                        files.
                     </p>
                 </div>
 
@@ -112,7 +118,8 @@
                         <p>HTML5</p>
                     </div>
 
-                    <p>Sustentabilidade is an informational website about eletronic waste and recycling in general (pt-br).
+                    <p>Sustentabilidade is an informational website about eletronic waste and recycling in general
+                        (pt-br).
                     </p>
                 </div>
 
@@ -123,14 +130,17 @@
 
             <div class="footer-bar"></div>
             <footer>
-                <a title="LinkedIn" href="https://www.linkedin.com/in/lucaagosta/"><img src="src/linkedin.png" alt="linkedIn"></a>
+                <a title="LinkedIn" href="https://www.linkedin.com/in/lucaagosta/"><img src="src/linkedin.png"
+                        alt="linkedIn"></a>
 
                 <a title="GitHub" href="https://github.com/Coldsaga"><img src="src/github.png" alt="Github logo"></a>
 
-                <a title="Send Telegram message" href="https://t.me/Coldsaga"><img src="src/telegram.png" alt="telegram"></a>
+                <a title="Send Telegram message" href="https://t.me/Coldsaga"><img src="src/telegram.png"
+                        alt="telegram"></a>
                 <a title="Send E-mail" href="mailto:me@agosta.dev"><img src="src/mailto.png" alt="e-mail"></a>
 
-                <a title="Indeed" href="https://my.indeed.com/p/lucaa-1vcu705"><img src="src/indeed.png" alt="indeed"></a>
+                <a title="Indeed" href="https://my.indeed.com/p/lucaa-1vcu705"><img src="src/indeed.png"
+                        alt="indeed"></a>
             </footer>
         </div>
     </div>
@@ -148,6 +158,7 @@
         }
         grained("#container", options);
     </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

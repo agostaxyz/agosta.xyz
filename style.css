@@ -23,6 +23,13 @@ h6 {
     font-weight: bold;
 }
 
+#loader-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    overflow: hidden;
+}
+
 body,
 #container {
     background-color: rgba(2, 2, 2);
