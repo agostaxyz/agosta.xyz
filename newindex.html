@@ -11,26 +11,64 @@
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
     <title>Luca Agosa</title>
+    <style>
+        .inline {
+            display: inline;
+        }
+
+        .h-100vh {
+            height: 100vh;
+
+        }
+    </style>
 </head>
 
-<body class="container">
-    <p class="h1">Hi, I'm</p>
-    <h1>Luca Agosta</h1>
-    <p class="h1">I'm a</p>
-    <h2>Back end Developer 🔒 and Artist 🔒</h2>
-    <spam>Unlock at least one </spam>
-    <a href="#dev">Test 🔓</a>
-    <h3 class="h2">Brazil</h3>
-    <h4 class="h2">Web Dev at EWZ</h4>
-
-    <main class="row">
-        <div class="col-sm">
-            <div class="card">Test</div>
+<body>
+    <header class="h-100vh" style="background-color: lightblue;">
+        <div class="container">
+            <p class="h1">Hi, I'm</p>
+            <h1>Luca Agosta</h1>
+            <p class="h1">I'm a</p>
+            <h2>Back end Developer <div class="inline" onclick="displayFunc(dev)">🔒</div> and Artist <div class="inline" onclick="displayFunc(art)">🔒</div>
+            </h2>
+            <spam>Unlock at least one </spam>
+            <a href="#dev">Test 🔓</a>
+            <h3 class="h2">Brazil</h3>
+            <h4 class="h2">Web Dev at EWZ</h4>
         </div>
-        <div class="col-sm">
-            <div class="card">Test</div>
-        </div>
+    </header>
 
+    <main>
+        <div class="container">
+            <div id="dev" class="row h-100vh d-none">
+                <div class="mb-4 col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="card">
+                        <h4 class="card-header h5">EWZ Capital</h4>
+                        <p class="my-2 mx-4">EWZ Capital</p>
+                    </div>
+                </div>
+                <div class="mb-4 col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="card">
+                        <h4 class="card-header h5">ADV Marcos</h4>
+                        <p class="my-2 mx-4">EWZ Capital</p>
+                    </div>
+                </div>
+            </div>
+            <div id="art" class="row h-100vh" style="display: none;">
+                <div class="mb-4 col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="card">
+                        <h4 class="card-header h5">EWZ Capital</h4>
+                        <p class="my-2 mx-4">EWZ Capital</p>
+                    </div>
+                </div>
+                <div class="mb-4 col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="card">
+                        <h4 class="card-header h5">ADV Marcos</h4>
+                        <p class="my-2 mx-4">EWZ Capital</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -38,7 +76,16 @@
     </footer>
 
 
+
     <!-- my JS  -->
+
+    <script>
+        function displayFunc(block) {
+            document.getElementById(block).style.display = "inline";
+        }
+    </script>
+
+
     <script>
         window.addEventListener('onscroll', function () {
             alert('x');
@@ -51,7 +98,7 @@
     </script>
     <script src="grained.js">
     </script>
-    <script>
+    <!-- <script>
         var options = {
             "animate": true,
             "patternWidth": 100,
@@ -62,7 +109,7 @@
             "grainHeight": 1
         }
         grained("#container", options);
-    </script>
+    </script> -->
     <script src="main.js"></script>
 
     <!-- Bootstrap Optional JS -->
