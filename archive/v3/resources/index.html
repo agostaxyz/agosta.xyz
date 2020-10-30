@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Luca Agosta">
+    <meta name="description" content="Website resources.">
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
+    <title>Resources - Luca Agosta</title>
+    <link rel="shortcut icon" href="../src/favicon.ico">
+    <script src="main.js"></script>
+</head>
+
+<body onload="mainFunc()">
+
+    <a href="https://agosta.dev"><h1>Luca Agosta</h1></a>
+    <h2 class="yellow-bg color-black">Devpage 🔎</h2>
+    <main>
+        <div class="salmon-bg inline big first">R</div><div class="p-text">esources:</div><p></p>
+
+
+
+        <form>
+            <p>logo</p>
+            <label>File</label>
+            <select id="file">
+                <option value="png">.png</option>
+                <option value="svg">.svg</option>
+                <option value="psd">.psd</option>
+            </select>
+            <label>Color scheme</label>
+            <select id="color">
+                <option value="light">light</option>
+                <option value="dark">dark</option>
+            </select>
+            <label>Size</label>
+            <select id="size">
+                <option value="256">256p</option>
+                <option value="512">512p</option>
+                <option value="1024">1024p</option>
+            </select>
+            <label>Background</label>
+            <select id="bg">
+                <option value="light">None</option>
+                <option value="dark">Contrasting</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="relative small-box">
+            <img src="logo-light-256.png" height="256px">
+            <p class="absolute bottom right" id="sizetxt">256x256</p>
+        </div>
+    </main>
+
+
+    <div class="footer-bar salmon-bg"></div>
+    <footer>
+        <a title="GitHub" href="https://github.com/Coldsaga"><img src="../src/github.png" alt="Github logo"></a><a
+            title="Send E-mail" href="mailto:me@agosta.dev"><img src="../src/mailto.png" alt="e-mail"></a><a
+            title="LinkedIn" href="https://www.linkedin.com/in/lucaagosta/"><img src="../src/linkedin.png"
+                alt="linkedIn"></a><a title="Indeed" href="https://my.indeed.com/p/lucaa-1vcu705"><img
+                src="../src/indeed.png" alt="indeed"></a>
+    </footer>
+
+</body>
+
+</html>
