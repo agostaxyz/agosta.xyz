@@ -1,5 +1,6 @@
 //hint
-console.log("K0N4M1-K0D3 Module ready");
+console.log("K0N4M1_K0D3 Module ready");
+const K0N4M1_K0D3 = "↑↑↓↓←→←→🅑🅐"
 // a key map of allowed keys
 var allowedKeys = {
     37: 'left',

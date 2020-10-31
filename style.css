@@ -22,6 +22,13 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
 }
 
+.main {
+  min-height: 70vh;
+}
+
+.p {
+  font-size: 1rem;
+}
 
 .bg-dark {
   background-color: #282a36 !important;
@@ -57,10 +64,26 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
   color: #8be9fd;
   border-color: #8be9fd;
 }
-
-.btn-outline-primary:hover {
+.btn-outline-primary:hover, .btn-outline-primary.active {
   background-color: #8be9fd;
   border-color: #8be9fd;
+}
+.btn-outline-warning {
+  color: #f1fa8c;
+  border-color: #f1fa8c;
+}
+.btn-outline-warning:hover, .btn-outline-warning.active {
+  background-color: #f1fa8c;
+  border-color: #f1fa8c;
+}
+.btn-outline-success {
+  color: #50fa7b;
+  border-color: #50fa7b;
+}
+
+.btn-outline-success:hover, .btn-outline-success.active {
+  background-color: #50fa7b;
+  border-color: #50fa7b;
 }
 
 .cursor-pointer{
@@ -87,16 +110,18 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
 
 }
 
-.bar{
-background-color: #ff79c6;
-border-radius: 12px;
-height: 6px;
-margin: auto;
+.year-separator {
+  border-left: 3px solid #ff79c6;
+  border-right: 3px solid #ff79c6;
+  border-top: 3px solid #ff79c6;
+  border-bottom: 3px solid #ff79c6;
+  border-radius: 1px;
 }
 
-
-.bar-danger{
-  background-color: #ff79c6;
+.bar{
+background-color: #ff79c6;
+height: 6px;
+margin: auto;
 }
 
 .bar-info{
