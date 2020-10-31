@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto&display=swap');
 /* change scroll color on Firefox */
+
 head, html, body {
   overflow: auto;
   scrollbar-color: #6272a4 #282a36;
@@ -99,8 +100,13 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .emoji{
-  height: 15px;
+  height: 1.4rem;
 }
+
+.emoji-2 {
+  height: 2rem;
+}
+
 .card-img{
  max-height: 100px;
  max-width: -webkit-fill-available;
@@ -130,7 +136,7 @@ margin: auto;
 
 .nav-links img{
 border-radius: 200px;
-margin-right: 0.6rem;
+margin-right: 0.8rem;
 height: 3.3rem;
 }
 
