@@ -1,16 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto&display=swap');
 /* change scroll color on Firefox */
 
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  background-color: #282a36;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.d-contents{
+  display: contents;
+}
+
 head, html, body {
   overflow: auto;
   scrollbar-color: #6272a4 #282a36;
   padding:0;
   margin:0;
+  overflow-x: hidden;
 }
 #konamiDisplay {
   display: none;
-  background-image: url("src/rainbow.gif");
+  background-image: url("assets/rainbow.gif");
   border-radius: 20000px;
+}
+
+.block {
+  border: 2px solid #282a36;
+  padding: 0px 6px;
+  border-radius: 15px;
+  background-color: #282a36;
+  display: inline;
+  font-size: 0.9em;
+}
+
+.emailShow {
+  border: 2px solid #f8f8f2;
+  background-color: #f8f8f2;
+  color: #282a36;
+  padding: 14px 14px;
+  margin: 0px 10px;
+  border-radius: 200px;
 }
 
 h1, .h1 {
@@ -31,11 +65,15 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
   font-size: 1rem;
 }
 
+.row {
+  margin-top: 20px;
+}
+
 .bg-dark {
   background-color: #282a36 !important;
 }
 .bg-secondary {
-  background-color: #44475a !important;
+  background-color: #44475aD9 !important;
 }
 .bg-secondary .card-header {
   background-color: #6272a4 !important;
@@ -47,7 +85,7 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
     color: #f8f8f2 !important;
 }
 .text-danger {
-    color: #ff5555 !important;
+    color: #ff79c6 !important;
 }
 .text-warning {
     color: #f1fa8c !important;
@@ -58,6 +96,11 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
 .link-primary {
   color: #8be9fd;
 }
+
+.filter-row {
+  line-height: 3em;
+}
+
 .link-primary:hover, .link-primary:visited {
   color: #6272a4;
 }
@@ -68,6 +111,7 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
 .btn-outline-primary:hover, .btn-outline-primary.active {
   background-color: #8be9fd;
   border-color: #8be9fd;
+  color: #282a36 !important;
 }
 .btn-outline-warning {
   color: #f1fa8c;
@@ -76,6 +120,7 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
 .btn-outline-warning:hover, .btn-outline-warning.active {
   background-color: #f1fa8c;
   border-color: #f1fa8c;
+  color: #282a36 !important;
 }
 .btn-outline-success {
   color: #50fa7b;
@@ -85,6 +130,7 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
 .btn-outline-success:hover, .btn-outline-success.active {
   background-color: #50fa7b;
   border-color: #50fa7b;
+  color: #282a36 !important;
 }
 
 .cursor-pointer{
@@ -107,13 +153,23 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
   height: 2rem;
 }
 
+.svg {
+  stroke: #8be9fd;
+}
+.svg-text {
+  fill: #f8f8f2;
+}
+
 .card-img{
  max-height: 100px;
  max-width: -webkit-fill-available;
  max-width: -moz-available;
  width: auto;
  border-radius: 4px;
+}
 
+.card-big{
+max-height: 150px;
 }
 
 .year-separator {
@@ -125,13 +181,9 @@ p, h2, h3, h4, h5, h6, .p, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .bar{
-background-color: #ff79c6;
+background-color: #8be9fd;
 height: 6px;
 margin: auto;
-}
-
-.bar-info{
-  background-color: #8be9fd;
 }
 
 .nav-links img{
@@ -158,11 +210,4 @@ border-radius: 400px;
 .nav-links-col {
   justify-content: center !important;
   }
-}
-
-.codersrank-widget {
---bg-color: #44475a;
---header-bg-color: #44475a;
---badge-bg-color: #44475a;
---badge-text-color: #f8f8f2;
 }

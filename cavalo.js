@@ -1,6 +1,3 @@
-//hint
-console.log("K0N4M1_K0D3 Module ready");
-const K0N4M1_K0D3 = "↑↑↓↓←→←→🅑🅐"
 // a key map of allowed keys
 var allowedKeys = {
     37: 'left',
@@ -41,7 +38,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
-    var audio = new Audio('src/cavalo.mp3');
+    var audio = new Audio('assets/cavalo.mp3');
     audio.play();
     document.getElementById("konamiDisplay").style.display = "inline";
 }
