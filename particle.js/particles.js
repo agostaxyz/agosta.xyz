@@ -27,13 +27,13 @@ var pJS = function(tag_id, params){
         }
       },
       color: {
-        value: '#fff'
+        value: '#f8f8f2'
       },
       shape: {
         type: 'circle',
         stroke: {
           width: 0,
-          color: '#ff0000'
+          color: '#f8f8f2'
         },
         polygon: {
           nb_sides: 5
@@ -67,7 +67,7 @@ var pJS = function(tag_id, params){
       line_linked: {
         enable: true,
         distance: 100,
-        color: '#fff',
+        color: '#f8f8f2',
         opacity: 1,
         width: 1
       },
@@ -91,11 +91,11 @@ var pJS = function(tag_id, params){
       detect_on: 'canvas',
       events: {
         onhover: {
-          enable: true,
+          enable: false,
           mode: 'grab'
         },
         onclick: {
-          enable: true,
+          enable: false,
           mode: 'push'
         },
         resize: true
