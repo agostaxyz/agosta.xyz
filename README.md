@@ -1,9 +1,9 @@
 # [Agosta.xyz](https://agosta.xyz)  
-
   
 My personal website.  
-It's static just so I don't need to pay for hosting, thanks Github! 🐙
-
-Currently uses the Dracula Theme and has a custom filter that I'm proud of!
+  
+Uses the [Dracula Theme](https://draculatheme.com/) and has a cool custom filter I made.
+  
+Hosted by Github!  
   
 <img alt="" src="https://agosta.xyz/assets/images/social.png" height="250px">
