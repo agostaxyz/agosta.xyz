@@ -17,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel='icon' href='/favicon.ico'/>
+        <meta name="author" content="Luca Agosta"/>
         {/* Open Graph */}
           <meta property="og:description" content="AWS Certified Java Application Developer at IBM, Agosta.xyz"/>
           <meta property="og:image" content="/preview.png" />
