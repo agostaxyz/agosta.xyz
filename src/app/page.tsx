@@ -16,12 +16,12 @@ export default function Home() {
         </div>
         <div>
           <h2 className="text-2xl mt-4">Luca Agosta</h2>
-          <p>Java Application Developer at IBM | AWS Certified</p>
+          <p className="m-4">Hi there, I'm a Java Application Developer with AWS Certifion looking for a new opportunity.</p>
           <p>More info on the links below:</p>
           
           <div className="mx-auto bg-yellow-300 h-2 w-80 max-w-[70vw] my-4">
     </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
             <a href="https://www.linkedin.com/in/lucaagosta/">
               <Image
                 src="/linkedin.png"
@@ -36,6 +36,15 @@ export default function Home() {
                 src="/github.png"
                 alt="Github"
                 className="rounded-full d-inline mx-1 duration-200 hover:scale-110"
+                width={92}
+                height={20}
+              />
+            </a>
+            <a href="https://www.salesforce.com/trailblazer/lucaagosta">
+              <Image
+                src="/trailhead.png"
+                alt="Salesforce Trailhead"
+                className="d-inline mx-1 duration-200 hover:scale-110"
                 width={100}
                 height={24}
               />
