@@ -1,22 +1,34 @@
-import Image from "next/image";
+import Image from 'next/image';
+import profile from '../../public/profile.webp'
+import bg from '../../public/bg.webp'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-halloween bg-no-repeat bg-center bg-cover">
-      <article className="bg-slate-700 rounded-md p-10 text-center text-white text-xl">
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <Image
+                  src={bg}
+                  alt="Halloween background"
+                  className="min-h-screen max-h-screen bg-cover bg-no-repeat bg-center bg-cover object-cover
+                  absolute z-0"
+                  priority
+                  placeholder="blur"
+      
+      ></Image>
+      <article className="bg-slate-700 rounded-md p-10 text-center text-white text-xl aboslute z-10 mt-24">
         <div className="flex justify-center">
           <Image
-            src="/profile.webp"
+            src={profile}
             alt="Profile"
             className="rounded-full"
             width={240}
-            height={24}
+            height={240}
             priority
+            placeholder="blur"
           />
         </div>
         <div>
           <h2 className="text-2xl mt-4">Luca Agosta</h2>
-          <p className="m-4">Hi there, I'm a Java Application Developer with AWS Certifion looking for a new opportunity.</p>
+          <p className="m-4">Hi there, I'm a Java Application Developer with AWS Certification looking for a new opportunity.</p>
           <p>More info on the links below:</p>
           
           <div className="mx-auto bg-yellow-300 h-2 w-80 max-w-[70vw] my-4">
@@ -28,7 +40,7 @@ export default function Home() {
                 alt="Linkedin"
                 className="rounded-full d-inline mx-1 duration-200 hover:scale-110"
                 width={100}
-                height={24}
+                height={100}
               />
             </a>
             <a href="https://github.com/agostaxyz">
@@ -36,8 +48,8 @@ export default function Home() {
                 src="/github.png"
                 alt="Github"
                 className="rounded-full d-inline mx-1 duration-200 hover:scale-110"
-                width={92}
-                height={20}
+                width={100}
+                height={100}
               />
             </a>
             <a href="https://www.salesforce.com/trailblazer/lucaagosta">
@@ -46,7 +58,7 @@ export default function Home() {
                 alt="Salesforce Trailhead"
                 className="d-inline mx-1 duration-200 hover:scale-110"
                 width={100}
-                height={24}
+                height={100}
               />
             </a>
           </div>
