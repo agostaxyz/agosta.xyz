@@ -6,7 +6,7 @@ export default function Home() {
       <article className="bg-slate-700 rounded-md p-10 text-center text-white text-xl">
         <div className="flex justify-center">
           <Image
-            src="/profile.jpeg"
+            src="/profile.webp"
             alt="Profile"
             className="rounded-full"
             width={240}
