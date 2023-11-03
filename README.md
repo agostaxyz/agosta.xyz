@@ -1,4 +1,4 @@
-![Website Preview](/src/assets/preview.png)
+![Website Preview](/public/preview.png)
     
 ## 🧞 Commands
 
