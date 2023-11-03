@@ -1,4 +1,4 @@
-![Website Preview](https://raw.githubusercontent.com/agostaxyz/agosta.xyz/main/src/assets/preview.png)
+![Website Preview](/src/assets/preview.png)
     
 ## 🧞 Commands
 
