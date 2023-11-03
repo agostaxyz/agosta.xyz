@@ -1,0 +1,98 @@
+---
+import { Image } from "astro:assets";
+import profile from '../assets/profile.webp'
+import bg from '../assets/bg.webp'
+
+import linkedin from '../assets/linkedin.png'
+import github from '../assets/github.png'
+import trailhead from '../assets/trailhead.png'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Agostaxyz</title>
+    <meta name="author" content="Luca Agosta" />
+    <!-- Open Graph -->
+    <meta
+      property="og:description"
+      content="Hi there, I'm a Java Application Developer with AWS Certification looking for a new opportunity. "
+    />
+    <meta property="og:image" content="../assets/preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:title" content="Agosta.xyz" />
+    <meta property="og:site_name" content="Agosta.xyz" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://agosta.xyz" />
+  </head>
+  <body>
+    <main class="flex min-h-screen flex-col items-center justify-between">
+      <Image
+        src={bg}
+        alt="Halloween Background"
+        class="min-h-screen max-h-screen bg-cover bg-no-repeat bg-center bg-cover object-cover absolute z-0"
+		decoding="async"
+      />
+      <article
+        class="bg-slate-700 rounded-md p-10 text-center text-white text-xl z-10 mt-24"
+      >
+        <div class="flex justify-center">
+          <Image
+            src={profile}
+            alt="Profile"
+            class="rounded-full"
+            width={240}
+            height={240}
+          />
+        </div>
+        <div>
+          <h2 class="text-2xl mt-4">Luca Agosta</h2>
+          <p class="m-4">
+            Hi there, I'm a Java Application Developer with AWS Certification
+            looking for a new opportunity.
+          </p>
+          <p>More info on the links below:</p>
+
+          <div class="mx-auto bg-yellow-300 h-2 w-80 max-w-[70vw] my-4"></div>
+          <div class="flex justify-center items-center">
+            <a href="https://www.linkedin.com/in/lucaagosta/">
+              <Image
+                src={linkedin}
+                alt="Linkedin"
+                class="rounded-full d-inline mx-1 duration-200 hover:scale-110"
+                width={100}
+                height={100}
+				decoding="async"
+              />
+            </a>
+            <a href="https://github.com/agostaxyz">
+              <Image
+                src={github}
+                alt="Github"
+                class="rounded-full d-inline mx-1 duration-200 hover:scale-110"
+                width={100}
+                height={100}
+				decoding="async"
+              />
+            </a>
+            <a href="https://www.salesforce.com/trailblazer/lucaagosta">
+              <Image
+                src={trailhead}
+                alt="Salesforce Trailhead"
+                class="d-inline mx-1 duration-200 hover:scale-110"
+                width={100}
+                height={100}
+				decoding="async"
+              />
+            </a>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
