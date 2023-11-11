@@ -32,8 +32,8 @@ import trailhead from "../assets/trailhead.png";
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://agosta.xyz" />
   </head>
-  <body>
-    <main class="flex min-h-screen flex-col items-center justify-between">
+  <body class="overflow-x-hidden">
+    <main class="flex min-h-screen flex-col items-center justify-between ">
       <Image
         src={bg}
         alt="Halloween Background"
@@ -41,7 +41,7 @@ import trailhead from "../assets/trailhead.png";
         decoding="async"
       />
       <article
-        class="bg-slate-700 rounded-md p-10 text-center text-white text-xl z-10 mt-24"
+        class="bg-slate-700 rounded-md p-10 text-center text-white text-xl z-10 mt-24 md:max-w-[40%] mx-4 md:mx-0"
       >
         <div class="flex justify-center">
           <Image
@@ -55,12 +55,11 @@ import trailhead from "../assets/trailhead.png";
         <div>
           <h2 class="text-2xl mt-4">Luca Agosta</h2>
           <p class="m-4">
-            Hi there, I'm a Java Application Developer with AWS Certification
-            looking for a new opportunity.
+            Hi there, I'm a Java Application Developer with AWS Certification looking for a new opportunity.
           </p>
           <p>More info on the links below:</p>
 
-          <div class="mx-auto bg-yellow-300 h-2 w-80 max-w-[70vw] my-4"></div>
+          <div class="mx-auto bg-yellow-300 h-2 w-80 max-w-[85%] my-4"></div>
           <div class="flex justify-center items-center">
             <a href="https://www.linkedin.com/in/lucaagosta/">
               <Image
